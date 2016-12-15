@@ -1,6 +1,6 @@
 {
   "name": "find-module-bin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "scan known node_modules directories to find installation directory of a particular bin file",
   "main": "index.js",
   "scripts": {
