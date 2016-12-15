@@ -1,0 +1,27 @@
+{
+  "name": "find-module-bin",
+  "version": "0.0.0",
+  "description": "scan known node_modules directories to find installation directory of a particular bin file",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mateodelnorte/find-module-bin.git"
+  },
+  "keywords": [
+    "scan",
+    "node_modules",
+    "bin",
+    "binary",
+    "executable",
+    "file"
+  ],
+  "author": "hi@iammattwalters.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mateodelnorte/find-module-bin/issues"
+  },
+  "homepage": "https://github.com/mateodelnorte/find-module-bin#readme"
+}
