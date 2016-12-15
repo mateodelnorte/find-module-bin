@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/mateodelnorte/find-module-bin/issues"
   },
-  "homepage": "https://github.com/mateodelnorte/find-module-bin#readme"
+  "homepage": "https://github.com/mateodelnorte/find-module-bin#readme",
+  "dependencies": {
+    "debug": "^2.4.4",
+    "global-paths": "^1.0.0"
+  }
 }
