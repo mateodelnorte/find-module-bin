@@ -1,13 +1,14 @@
 const find = require('../');
+const path = require('path');
 const should = require('should');
 
 describe('find-module-bin', function () {
 
   it('should find bin in approriate folder', function () {
 
-    const path = find('babel');
+    const filepath = find('babel');
 
-    path.should.eql('/Users/mateodelnorte/development/find-module-bin/node_modules/.bin/babel');
+    filepath.should.eql(path.join(__dirname, '..', 'node_modules', '.bin', 'babel'));
 
   });
 
