@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/mateodelnorte/find-module-bin#readme",
   "dependencies": {
-    "debug": "^2.4.4",
+    "debug": "^4.1.0",
     "global-paths": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-preset-env": "^1.1.8",
-    "mocha": "^3.2.0",
-    "should": "^11.2.0"
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
   }
 }
