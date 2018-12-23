@@ -1,6 +1,6 @@
 {
   "name": "find-module-bin",
-  "version": "0.0.2",
+  "version": "0.0.0-development",
   "description": "scan known node_modules directories to find installation directory of a particular bin file",
   "main": "index.js",
   "scripts": {
@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/mateodelnorte/find-module-bin#readme",
   "dependencies": {
-    "debug": "^2.4.4",
+    "debug": "^4.1.1",
     "global-paths": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.7.0",
-    "mocha": "3.5.3",
-    "should": "11.2.1"
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
   }
 }
