@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/mateodelnorte/find-module-bin#readme",
   "dependencies": {
-    "debug": "^2.4.4",
+    "debug": "^4.0.0",
     "global-paths": "^1.0.0"
   },
   "devDependencies": {
