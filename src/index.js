@@ -1,23 +1,17 @@
 const fs = require('fs');
 const path = require('path');
-const debug = require('debug')('loop:find-module-bin');
+const debug = require('debug')('find-module-bin');
+const globalPaths = require('global-paths');
 
-const nodeModulePaths = require('global-paths')();
-
-module.exports = function findBinFile(binFileName) {
-  const nmp = nodeModulePaths.pop();
-  if (!nmp) {
-    throw new Error(`could not find ${binFileName}`);
+module.exports = function findModuleBin(binFileName) {
+  const searchPaths = globalPaths();
+  for (let i = 0; i < searchPaths.length; i++) {
+    const binPath = path.join(searchPaths[i], '.bin', binFileName);
+    debug(`looking for ${binFileName} at ${binPath}`);
+    if (fs.existsSync(binPath)) {
+      debug(`found ${binFileName} at ${binPath}`);
+      return binPath;
+    }
   }
-  try {
-    const p = path.join(nmp, '.bin', binFileName);
-    debug(`looking for ${binFileName} at ${p}`);
-
-    nmp = fs.statSync(p);
-    debug(`found ${binFileName} at ${p}`);
-
-    return p;
-  } catch (e) {
-    return findBinFile(binFileName);
-  }
+  throw new Error(`could not find ${binFileName}`);
 };
